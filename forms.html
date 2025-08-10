@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/forms.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form>
+            <h1>Login</h1>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Username" name="user-name" required>
+                <svg class="input-icon" width="15" height="15"><use href="./images/sprite.svg#icon-user"></use></svg>
+            </div>
+            <div class="input-wrapper">
+                <input type="password" placeholder="Password" name="password" required>
+                <svg class="input-icon lock" width="15" height="15"><use href="./images/sprite.svg#icon-lock"></use></svg>                
+            </div>
+            <div class="remember-forgot">
+                <input 
+                    type="checkbox" 
+                    id="rmmbr-me"
+                    class="visually-hidden"
+                    name="remember">
+                <label for="rmmbr-me" class="rm-label"> 
+                    <span class="box">
+                        <svg class="check-icon" width="10" height="8">
+                            <use href="./images/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </span>
+                    Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+            <div class="register-link">
+                Don't have an account? <a href="#">Register</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
