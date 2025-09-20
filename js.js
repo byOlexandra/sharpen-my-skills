@@ -125,6 +125,35 @@ function getDeliveryOption(option) {
     }
 }
 
+function calculator(a,b,sign){
+    if (typeof a != "number" || typeof b != "number") {
+    return `unknown value`
+    } 
+
+    switch (sign) {
+        case "+":
+            return a + b;
+            break;
+        case "-":
+            return a - b;
+            break;
+        case "*":
+            return a * b;
+            break;
+        case "/":
+            return b !==0 ? a / b : "divided by zero";
+            break;
+        default:
+            return `unknown value`;
+    }
+}
+
+console.log(calculator(2, 3, "*"));  
+console.log(calculator(7, 0, "/"));
+console.log(calculator(9, 10, "+"));
+console.log(calculator(9, "p", "-"));
+
+
 console.log(getDaysInMonth(6));
 console.log(getDaysInMonth(2));
 console.log(getDaysInMonth(10));
